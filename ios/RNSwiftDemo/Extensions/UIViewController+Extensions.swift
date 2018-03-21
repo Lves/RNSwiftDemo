@@ -48,4 +48,12 @@ public extension UIViewController {
             }
         }
     }
+    
+    public class func instanceViewControllerInStoryboard(withName name: String, storyboardName: String) -> UIViewController? {
+        let story = UIStoryboard(name: storyboardName, bundle: nil)
+        if (story.value(forKey: "identifierToNibNameMap") as AnyObject).object(forKey: name) != nil {
+            return story.instantiateViewController(withIdentifier: name)
+        }
+        return nil
+    }
 }

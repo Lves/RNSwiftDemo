@@ -8,10 +8,19 @@
 
 import UIKit
 
-open class RouterTool: NSObject {
-    @objc open static func routeBackToNative()  {
+class RouterTool: NSObject {
+    @objc  static func routeBackToNative()  {
         DispatchQueue.main.async {
             UIViewController.topController?.navigationController?.popViewController(animated: true)
+        }
+    }
+    @objc static func routeToNative(name:String?, storyboardName:String?)  {
+        if let name = name,let storyboardName = storyboardName {
+            DispatchQueue.main.async {
+                if let detailViewController = UIViewController.instanceViewControllerInStoryboard(withName: name, storyboardName: storyboardName){
+                    UIViewController.topController?.navigationController?.pushViewController(detailViewController, animated: true)
+                }
+            }
         }
     }
 }

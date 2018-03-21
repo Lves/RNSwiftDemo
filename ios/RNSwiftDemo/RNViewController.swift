@@ -13,9 +13,9 @@ class RNViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.navigationBar.isHidden = false
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +28,4 @@ class RNViewController: UIViewController {
         )
         view = rootView
     }
-   
- 
-
-
 }

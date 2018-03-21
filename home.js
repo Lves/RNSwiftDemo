@@ -19,12 +19,15 @@ import RootStack from './index';
 
 
 export default class Home extends Component<Props> {
-  static navigationOptions = {
-    title: 'Welcome',
-    headerMode:'none',
-    headerLeft: (
+  static navigationOptions = ({ navigation ,navigationOptions}) => {
+    return {
+      title: 'RN首页',
+      headerMode:'none',
+      headerLeft: (
         <Button  title=" 《 " color="#fff" onPress={() => NativeModules.RNBridge.routeBackToNative()} />
       ),
+    }
+    
   };
   render() {
     return (
@@ -37,11 +40,11 @@ export default class Home extends Component<Props> {
           title="提交"
           onPress={() => this.props.navigation.navigate('FormView')}
         />
-
+        <Text>{this.props.screenProps.name} </Text>
         <Button
           title="调用原生"
           onPress={() => 
-            NativeModules.RNBridge.routeBackToNative()
+            NativeModules.RNBridge.routeToNative('DetailViewController','Main')
           }
         />
       </View>

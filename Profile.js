@@ -14,6 +14,7 @@ import {
 
 import {
   StackNavigator,
+  NativeModules,
 } from 'react-navigation';
 
 
@@ -42,7 +43,7 @@ export default class ProfileScreen extends Component {
         />
         <Button
           title="返回"
-          onPress={() => this.props.navigation.goBack()}
+          onPress={() => NativeModules.RNBridge.routeBackToNative()}
         />
       </View>
     );
