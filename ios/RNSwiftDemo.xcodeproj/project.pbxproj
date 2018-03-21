@@ -66,6 +66,20 @@
 			remoteGlobalIDString = 2D2A28471D9B043800D4039D;
 			remoteInfo = "RCTLinking-tvOS";
 		};
+		6C14B147206242CD00C61229 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C14B142206242CD00C61229 /* RCTAnimation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTAnimation;
+		};
+		6C14B149206242CD00C61229 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C14B142206242CD00C61229 /* RCTAnimation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28201D9B03D100D4039D;
+			remoteInfo = "RCTAnimation-tvOS";
+		};
 		6CC9582B2061F12400D5EC7A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6CC958262061F12400D5EC7A /* RCTText.xcodeproj */;
@@ -294,6 +308,7 @@
 		6C14B13C2062388A00C61229 /* RNBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNBridge.h; sourceTree = "<group>"; };
 		6C14B13D2062388A00C61229 /* RNBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNBridge.m; sourceTree = "<group>"; };
 		6C14B14020623B5C00C61229 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		6C14B142206242CD00C61229 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		6C5DF0A82060E5B200F8F81B /* RNSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C5DF0AB2060E5B200F8F81B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C5DF0AD2060E5B200F8F81B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -388,6 +403,15 @@
 				6C14B14020623B5C00C61229 /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6C14B143206242CD00C61229 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C14B148206242CD00C61229 /* libRCTAnimation.a */,
+				6C14B14A206242CD00C61229 /* libRCTAnimation.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		6C5DF09F2060E5B200F8F81B = {
@@ -502,6 +526,7 @@
 		6CD3AA4420611FE9000BE8DB /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				6C14B142206242CD00C61229 /* RCTAnimation.xcodeproj */,
 				6C14B0922062042900C61229 /* RCTLinking.xcodeproj */,
 				6C14B0642062014400C61229 /* RCTNetwork.xcodeproj */,
 				6CC958782061FB4400D5EC7A /* RCTWebSocket.xcodeproj */,
@@ -597,6 +622,10 @@
 					ProjectRef = 6CC958542061F41F00D5EC7A /* RCTActionSheet.xcodeproj */;
 				},
 				{
+					ProductGroup = 6C14B143206242CD00C61229 /* Products */;
+					ProjectRef = 6C14B142206242CD00C61229 /* RCTAnimation.xcodeproj */;
+				},
+				{
 					ProductGroup = 6CC958432061F3B400D5EC7A /* Products */;
 					ProjectRef = 6CC958422061F3B400D5EC7A /* RCTBlob.xcodeproj */;
 				},
@@ -671,6 +700,20 @@
 			fileType = archive.ar;
 			path = "libRCTLinking-tvOS.a";
 			remoteRef = 6C14B0992062042900C61229 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6C14B148206242CD00C61229 /* libRCTAnimation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTAnimation.a;
+			remoteRef = 6C14B147206242CD00C61229 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6C14B14A206242CD00C61229 /* libRCTAnimation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTAnimation.a;
+			remoteRef = 6C14B149206242CD00C61229 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		6CC9582C2061F12400D5EC7A /* libRCTText.a */ = {
