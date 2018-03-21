@@ -23,7 +23,7 @@ export default class Home extends Component<Props> {
     title: 'Welcome',
     headerMode:'none',
     headerLeft: (
-        <Button  title=" < " color="#fff" onPress={() => NativeModules.RouterTool.routeBack()} />
+        <Button  title=" 《 " color="#fff" onPress={() => NativeModules.RNBridge.routeBackToNative()} />
       ),
   };
   render() {
@@ -41,7 +41,7 @@ export default class Home extends Component<Props> {
         <Button
           title="调用原生"
           onPress={() => 
-            NativeModules.RouterTool.routeBack()
+            NativeModules.RNBridge.routeBackToNative()
           }
         />
       </View>
