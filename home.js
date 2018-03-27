@@ -24,7 +24,7 @@ export default class Home extends Component<Props> {
       title: 'RN首页',
       headerMode:'none',
       headerLeft: (
-        <Button  title=" 《 " color="#fff" onPress={() => NativeModules.RNBridge.routeBackToNative()} />
+        <Button  title=" << " color="#fff" onPress={() => NativeModules.RNBridge.routeBackToNative()} />
       ),
     }
     
@@ -38,11 +38,11 @@ export default class Home extends Component<Props> {
         />
         <Button
           title="提交"
-          onPress={() => this.props.navigation.navigate('FormView')}
+          onPress={() => this.props.navigation.navigate('Login')}
         />
         <Text>{this.props.screenProps.name} </Text>
         <Button
-          title="调用原生"
+          title="跳转原生VC"
           onPress={() => 
             NativeModules.RNBridge.routeToNative('DetailViewController','Main')
           }

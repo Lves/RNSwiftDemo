@@ -9,12 +9,12 @@ import {
   TextInput,
   ScrollView,
   FlatList,
-  Button
+  Button,
+  NativeModules,
 } from 'react-native';
 
 import {
   StackNavigator,
-  NativeModules,
 } from 'react-navigation';
 
 
@@ -43,7 +43,9 @@ export default class ProfileScreen extends Component {
         />
         <Button
           title="返回"
-          onPress={() => NativeModules.RNBridge.routeBackToNative()}
+          onPress={ () => 
+            NativeModules.RNBridge.routeBackToNative()
+          }
         />
       </View>
     );

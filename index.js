@@ -2,6 +2,7 @@ import { AppRegistry,Button } from 'react-native';
 import React, { Component } from 'react';
 import Home from './home';
 import ProfileScreen from './Profile';
+import LoginScreen from './src/views/login';
 import {
   StackNavigator,
 } from 'react-navigation';
@@ -13,6 +14,9 @@ const RootStack = StackNavigator(
     Profile: {
       screen: ProfileScreen,
     },
+    Login:{
+      screen: LoginScreen,
+    }
   },
   {
     initialRouteName: 'Home',
@@ -37,6 +41,9 @@ const ListStack = StackNavigator(
     Profile: {
       screen: ProfileScreen,
     },
+    Login:{
+      screen: LoginScreen,
+    }
   },
   {
     initialRouteName: 'Profile',
