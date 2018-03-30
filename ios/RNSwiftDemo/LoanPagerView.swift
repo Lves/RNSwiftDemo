@@ -9,7 +9,7 @@
 import UIKit
 import FSPagerView
 class LoanPagerView: FSPagerView {
-
+    @objc var onClickBanner:RCTBubblingEventBlock?
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

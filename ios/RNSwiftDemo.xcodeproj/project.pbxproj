@@ -447,6 +447,7 @@
 		6C5DF0AA2060E5B200F8F81B /* RNSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6C6C8112206DDF7E00E63F00 /* RNTools */,
 				6C14B13F20623B4A00C61229 /* Extensions */,
 				6C5DF0AB2060E5B200F8F81B /* AppDelegate.swift */,
 				6C5DF0AD2060E5B200F8F81B /* ViewController.swift */,
@@ -465,6 +466,13 @@
 				6CC39BB0206CCA0C00048524 /* LoanPagerView.swift */,
 			);
 			path = RNSwiftDemo;
+			sourceTree = "<group>";
+		};
+		6C6C8112206DDF7E00E63F00 /* RNTools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RNTools;
 			sourceTree = "<group>";
 		};
 		6CC958272061F12400D5EC7A /* Products */ = {

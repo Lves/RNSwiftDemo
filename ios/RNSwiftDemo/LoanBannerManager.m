@@ -9,6 +9,8 @@
 #import "LoanBannerManager.h"
 #import "RNSwiftDemo-Swift.h"
 #import <React/RCTBridgeModule.h>
+//#import "RCTConvert+PropertyType.h"
+
 @interface LoanBannerManager()<FSPagerViewDelegate,FSPagerViewDataSource>
 
 
@@ -19,10 +21,18 @@
 
 RCT_EXPORT_MODULE(LoanBanner)
 RCT_EXPORT_VIEW_PROPERTY(interitemSpacing, CGFloat)
+RCT_EXPORT_VIEW_PROPERTY(isInfinite, BOOL)
+RCT_CUSTOM_VIEW_PROPERTY(itemSize, CGSize, LoanPagerView){
+    LoanPagerView *pagerView = (LoanPagerView *)view;
+    [pagerView setItemSize:[RCTConvert CGSize:json]];
+}
+RCT_EXPORT_VIEW_PROPERTY(onClickBanner, RCTBubblingEventBlock)
+
+
 - (UIView *)view{
     LoanPagerView *pagerView = [[LoanPagerView alloc] initWithFrame:CGRectZero];
     [pagerView registerClass:[FSPagerViewCell class] forCellWithReuseIdentifier:@"PagerCell"];
-    pagerView.itemSize = CGSizeMake(300, 100);
+//    pagerView.itemSize = CGSizeMake(300, 100);
     pagerView.delegate = self;
     pagerView.dataSource = self;
     return pagerView;
@@ -34,6 +44,10 @@ RCT_EXPORT_VIEW_PROPERTY(interitemSpacing, CGFloat)
     FSPagerViewCell *cell = [pagerView dequeueReusableCellWithReuseIdentifier:@"PagerCell" atIndex:index];
     cell.imageView.image = [UIImage imageNamed:@"bannerImage_01"];
     return cell;
+}
+- (void)pagerView:(FSPagerView *)pagerView didSelectItemAtIndex:(NSInteger)index{
+    LoanPagerView *loanPagerView = (LoanPagerView *)pagerView;
+    loanPagerView.onClickBanner(@{@"pagerView":@0,@"index":[NSNumber numberWithInteger:index]});
 }
 
 @end
