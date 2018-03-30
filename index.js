@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Home from './home';
 import ProfileScreen from './Profile';
 import LoginScreen from './src/views/login';
+import MapView from './src/views/MapView';
 import {
   StackNavigator,
 } from 'react-navigation';
@@ -16,6 +17,9 @@ const RootStack = StackNavigator(
     },
     Login:{
       screen: LoginScreen,
+    },
+    MapView:{
+      screen:MapView
     }
   },
   {
@@ -43,6 +47,9 @@ const ListStack = StackNavigator(
     },
     Login:{
       screen: LoginScreen,
+    },
+    MapView:{
+      screen:MapView
     }
   },
   {

@@ -14,7 +14,7 @@ import {
 } from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import RootStack from './index';
-
+import MapView from './src/views/MapView';
 
 
 
@@ -40,13 +40,17 @@ export default class Home extends Component<Props> {
           title="提交"
           onPress={() => this.props.navigation.navigate('Login')}
         />
-        <Text>{this.props.screenProps.name} </Text>
+        <Button
+          title="原生控件"
+          onPress={() => this.props.navigation.navigate('MapView')}
+        />
         <Button
           title="跳转原生VC"
           onPress={() => 
             NativeModules.RNBridge.routeToNative('DetailViewController','Main')
           }
         />
+
       </View>
       
 

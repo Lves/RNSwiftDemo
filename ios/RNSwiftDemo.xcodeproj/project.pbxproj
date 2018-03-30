@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65E506761A8481B4F2EAE162 /* Pods_RNSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3111D09DF53F39231801F88C /* Pods_RNSwiftDemo.framework */; };
 		6C14B09C206207BD00C61229 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CD3AA592061200A000BE8DB /* libReact.a */; };
 		6C14B09D206207C000C61229 /* libyoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CD3AA5D2061200A000BE8DB /* libyoga.a */; };
 		6C14B09E2062083E00C61229 /* libjschelpers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CD3AA652061200A000BE8DB /* libjschelpers.a */; };
@@ -36,6 +37,8 @@
 		6C5DF0B32060E5B200F8F81B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C5DF0B22060E5B200F8F81B /* Assets.xcassets */; };
 		6C5DF0B62060E5B200F8F81B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C5DF0B42060E5B200F8F81B /* LaunchScreen.storyboard */; };
 		6C6FE4142060EF7A0017DE4B /* RNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6FE4132060EF7A0017DE4B /* RNViewController.swift */; };
+		6CC39BAF206CC5F300048524 /* LoanBannerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC39BAE206CC5F300048524 /* LoanBannerManager.m */; };
+		6CC39BB1206CCA0C00048524 /* LoanPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC39BB0206CCA0C00048524 /* LoanPagerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -320,6 +323,10 @@
 		6C5DF0B72060E5B200F8F81B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C6FE4132060EF7A0017DE4B /* RNViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNViewController.swift; sourceTree = "<group>"; };
 		6C6FE4152060F1250017DE4B /* RNSwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNSwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		6CC39BA6206C8E9700048524 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6CC39BAD206CC5F300048524 /* LoanBannerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoanBannerManager.h; sourceTree = "<group>"; };
+		6CC39BAE206CC5F300048524 /* LoanBannerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoanBannerManager.m; sourceTree = "<group>"; };
+		6CC39BB0206CCA0C00048524 /* LoanPagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanPagerView.swift; sourceTree = "<group>"; };
 		6CC958262061F12400D5EC7A /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		6CC958422061F3B400D5EC7A /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		6CC958542061F41F00D5EC7A /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
@@ -357,6 +364,7 @@
 				6C14B0AC206209C000C61229 /* libfishhook.a in Frameworks */,
 				6C14B0AD206209D300C61229 /* libRCTNetwork.a in Frameworks */,
 				6C14B0AE206209DF00C61229 /* libRCTLinking.a in Frameworks */,
+				65E506761A8481B4F2EAE162 /* Pods_RNSwiftDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +374,7 @@
 		2A84D349EA37F1B4B956C677 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6CC39BA6206C8E9700048524 /* MapKit.framework */,
 				6C14B0E820620F7A00C61229 /* JavaScriptCore.framework */,
 				3111D09DF53F39231801F88C /* Pods_RNSwiftDemo.framework */,
 			);
@@ -451,6 +460,9 @@
 				6C14B13C2062388A00C61229 /* RNBridge.h */,
 				6C14B13D2062388A00C61229 /* RNBridge.m */,
 				6C14B14B2062451400C61229 /* DetailViewController.swift */,
+				6CC39BAD206CC5F300048524 /* LoanBannerManager.h */,
+				6CC39BAE206CC5F300048524 /* LoanBannerManager.m */,
+				6CC39BB0206CCA0C00048524 /* LoanPagerView.swift */,
 			);
 			path = RNSwiftDemo;
 			sourceTree = "<group>";
@@ -977,17 +989,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RNSwiftDemo/Pods-RNSwiftDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework",
-				"${BUILT_PRODUCTS_DIR}/Folly/folly.framework",
-				"${BUILT_PRODUCTS_DIR}/glog/glog.framework",
-				"${BUILT_PRODUCTS_DIR}/yoga/yoga.framework",
+				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoubleConversion.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/folly.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1017,6 +1023,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C6FE4142060EF7A0017DE4B /* RNViewController.swift in Sources */,
+				6CC39BB1206CCA0C00048524 /* LoanPagerView.swift in Sources */,
+				6CC39BAF206CC5F300048524 /* LoanBannerManager.m in Sources */,
 				6C5DF0AE2060E5B200F8F81B /* ViewController.swift in Sources */,
 				6C14B13E2062388A00C61229 /* RNBridge.m in Sources */,
 				6C14B118206236E300C61229 /* RouterTool.swift in Sources */,

@@ -7,33 +7,78 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19C948DFE9743156D2D5E205ADD23DE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		B604B2854F1242C2EFB153DE23A9B552 /* Pods-RNSwiftDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3695DD7CD508D9F3AD0B0C64CD82D9C4 /* Pods-RNSwiftDemo-dummy.m */; };
-		B79267FDD8760B7C75241365E0EB1F15 /* Pods-RNSwiftDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3369F369535FA0D2D0E262A8734B94B /* Pods-RNSwiftDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		017A4EC1B38AB50FC4CB46643A0A77F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		03BBD899B92EFE0E171DEF7B4A7DDE8B /* FSPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3281B5AD54BE36C6AECD864E6C27F0C4 /* FSPagerView.swift */; };
+		075CC243674F7187A841C287CA081280 /* FSPagerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA42CED480E074BFF6F539E6579782AB /* FSPagerView-dummy.m */; };
+		1FE1961612042D927E76E53B8A7A89C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		357D7C84290EBD2CF71498C07886F110 /* FSPagerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B889EA88D369FB772F7E3803ADD810A9 /* FSPagerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DEB4FB8E3BDD6E76F42AD65A169A504 /* Pods-RNSwiftDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3369F369535FA0D2D0E262A8734B94B /* Pods-RNSwiftDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5832B6C6DF42450FCAB70E67F464E040 /* FSPagerViewLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E970669267168A4035E333F28AD2ABCD /* FSPagerViewLayoutAttributes.swift */; };
+		638D4086C988445EEC88BF66F3B5D3B9 /* FSPageViewTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0860E2E806450B47DE69DCFA75137AC6 /* FSPageViewTransformer.swift */; };
+		6F16E3CF88BBD2BAE86F1B09EA55311A /* FSPagerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884B899C77F6B5D4076A9652DCA49D4F /* FSPagerCollectionView.swift */; };
+		766C44B923C22D6143C77BAC15E2B7F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		79E391C6A3429405FB63474CF7218DE3 /* FSPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A3C434FF3ADB98D24AF8F40090A1A1 /* FSPagerViewCell.swift */; };
+		838BD1D2FCD856E3E7AAD63C498E9A92 /* FSPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AB1C4189F280590D3474F41B7A12B1 /* FSPageControl.swift */; };
+		96CA37578CC8CC62EFB38F1635EAC76D /* Pods-RNSwiftDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3695DD7CD508D9F3AD0B0C64CD82D9C4 /* Pods-RNSwiftDemo-dummy.m */; };
+		FED3B2A51B9910D524980ACD078DE5AC /* FSPageViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F60FE1C8434AB76B76305E7B59F26D8 /* FSPageViewLayout.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		624673316A090B7FB0F1CA30EEA88FF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED279AFE7EA745A57B7B9F35AD5F2C9F;
+			remoteInfo = FSPagerView;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		154C894AD78BB89645FCD4128499D1B4 /* Pods_RNSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RNSwiftDemo.framework; path = "Pods-RNSwiftDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0860E2E806450B47DE69DCFA75137AC6 /* FSPageViewTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPageViewTransformer.swift; path = Sources/FSPageViewTransformer.swift; sourceTree = "<group>"; };
+		0B1E995BD91B99585A51CF8176CBA71D /* Pods_RNSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RNSwiftDemo.framework; path = "Pods-RNSwiftDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C8504A1CE6609C9D1898507885FC948 /* Pods-RNSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RNSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3281B5AD54BE36C6AECD864E6C27F0C4 /* FSPagerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPagerView.swift; path = Sources/FSPagerView.swift; sourceTree = "<group>"; };
 		3695DD7CD508D9F3AD0B0C64CD82D9C4 /* Pods-RNSwiftDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RNSwiftDemo-dummy.m"; sourceTree = "<group>"; };
 		4F1B3C88B8EE68B205DBC5AC27B03D80 /* Pods-RNSwiftDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RNSwiftDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		50AB1C4189F280590D3474F41B7A12B1 /* FSPageControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPageControl.swift; path = Sources/FSPageControl.swift; sourceTree = "<group>"; };
 		53EBBD445C5C3B2F8C0F7D427DF87709 /* Pods-RNSwiftDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RNSwiftDemo-resources.sh"; sourceTree = "<group>"; };
+		574AD5AC10F8A4649CA8C51588E41622 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58A3C434FF3ADB98D24AF8F40090A1A1 /* FSPagerViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPagerViewCell.swift; path = Sources/FSPagerViewCell.swift; sourceTree = "<group>"; };
 		5DE1C977EFA1A899C72481AC8D9F3268 /* Pods-RNSwiftDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RNSwiftDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		884B899C77F6B5D4076A9652DCA49D4F /* FSPagerCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPagerCollectionView.swift; path = Sources/FSPagerCollectionView.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99CAC195EB52DDD2EE0607884138A9C4 /* FSPagerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FSPagerView.framework; path = FSPagerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B79230E8EBFD11206CC680BB5FFB8FD /* Pods-RNSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RNSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9F60FE1C8434AB76B76305E7B59F26D8 /* FSPageViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPageViewLayout.swift; path = Sources/FSPageViewLayout.swift; sourceTree = "<group>"; };
 		AB5697C0DA149D2F3286CBA151B8BE17 /* Pods-RNSwiftDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RNSwiftDemo.modulemap"; sourceTree = "<group>"; };
 		B59333DBF11B5FAD7162B4678663EDA0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B889EA88D369FB772F7E3803ADD810A9 /* FSPagerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSPagerView-umbrella.h"; sourceTree = "<group>"; };
+		B999F362829BABE376270EC6F3FF73FD /* FSPagerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FSPagerView.modulemap; sourceTree = "<group>"; };
+		BA42CED480E074BFF6F539E6579782AB /* FSPagerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSPagerView-dummy.m"; sourceTree = "<group>"; };
+		C1A52E97698361FF8D09689357AB594D /* FSPagerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSPagerView-prefix.pch"; sourceTree = "<group>"; };
 		C27721699A1F0561DF5DCF3CCA2DA6BC /* Pods-RNSwiftDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RNSwiftDemo-frameworks.sh"; sourceTree = "<group>"; };
 		D3369F369535FA0D2D0E262A8734B94B /* Pods-RNSwiftDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RNSwiftDemo-umbrella.h"; sourceTree = "<group>"; };
+		D3F327A9387EBEE32EE817C0B231357B /* FSPagerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSPagerView.xcconfig; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E970669267168A4035E333F28AD2ABCD /* FSPagerViewLayoutAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSPagerViewLayoutAttributes.swift; path = Sources/FSPagerViewLayoutAttributes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D21C9E6B60E1896DCCBE9C0CE84AEE0B /* Frameworks */ = {
+		6E070AB187E415CF4D7EB6E528000CB4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19C948DFE9743156D2D5E205ADD23DE4 /* Foundation.framework in Frameworks */,
+				017A4EC1B38AB50FC4CB46643A0A77F9 /* Foundation.framework in Frameworks */,
+				766C44B923C22D6143C77BAC15E2B7F7 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B771A2D7B795353A194579EEAD69F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FE1961612042D927E76E53B8A7A89C7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,14 +91,6 @@
 				3DF384AC5B3859830F77F744F3D3C6E2 /* Pods-RNSwiftDemo */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		34A1F324692E9240B30743FBE65BB31B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				154C894AD78BB89645FCD4128499D1B4 /* Pods_RNSwiftDemo.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		3DF384AC5B3859830F77F744F3D3C6E2 /* Pods-RNSwiftDemo */ = {
@@ -74,61 +111,136 @@
 			path = "Target Support Files/Pods-RNSwiftDemo";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				34A1F324692E9240B30743FBE65BB31B /* Products */,
-				2EF01A4934D8C7499116237E37E265DD /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				E4BFD09C028721BBB8574A0104A2935D /* Pods */,
+				D9FE8A32EEDB8725B84AD85971C9232C /* Products */,
+				2EF01A4934D8C7499116237E37E265DD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7DC9A0ADC0AA759D63D59315FD7E2189 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B999F362829BABE376270EC6F3FF73FD /* FSPagerView.modulemap */,
+				D3F327A9387EBEE32EE817C0B231357B /* FSPagerView.xcconfig */,
+				BA42CED480E074BFF6F539E6579782AB /* FSPagerView-dummy.m */,
+				C1A52E97698361FF8D09689357AB594D /* FSPagerView-prefix.pch */,
+				B889EA88D369FB772F7E3803ADD810A9 /* FSPagerView-umbrella.h */,
+				574AD5AC10F8A4649CA8C51588E41622 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FSPagerView";
+			sourceTree = "<group>";
+		};
+		D59107A95774A18A08C134C49226650A /* FSPagerView */ = {
+			isa = PBXGroup;
+			children = (
+				50AB1C4189F280590D3474F41B7A12B1 /* FSPageControl.swift */,
+				884B899C77F6B5D4076A9652DCA49D4F /* FSPagerCollectionView.swift */,
+				3281B5AD54BE36C6AECD864E6C27F0C4 /* FSPagerView.swift */,
+				58A3C434FF3ADB98D24AF8F40090A1A1 /* FSPagerViewCell.swift */,
+				E970669267168A4035E333F28AD2ABCD /* FSPagerViewLayoutAttributes.swift */,
+				9F60FE1C8434AB76B76305E7B59F26D8 /* FSPageViewLayout.swift */,
+				0860E2E806450B47DE69DCFA75137AC6 /* FSPageViewTransformer.swift */,
+				7DC9A0ADC0AA759D63D59315FD7E2189 /* Support Files */,
+			);
+			name = FSPagerView;
+			path = FSPagerView;
+			sourceTree = "<group>";
+		};
+		D9FE8A32EEDB8725B84AD85971C9232C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99CAC195EB52DDD2EE0607884138A9C4 /* FSPagerView.framework */,
+				0B1E995BD91B99585A51CF8176CBA71D /* Pods_RNSwiftDemo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4BFD09C028721BBB8574A0104A2935D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D59107A95774A18A08C134C49226650A /* FSPagerView */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		16B662275D306E2A1D2A1D0F6C181F03 /* Headers */ = {
+		369BAADAD4DE4AF1B7B2B9396F25F59C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B79267FDD8760B7C75241365E0EB1F15 /* Pods-RNSwiftDemo-umbrella.h in Headers */,
+				357D7C84290EBD2CF71498C07886F110 /* FSPagerView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9AC28E491F1F6ED51289B7CF94F9FA1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DEB4FB8E3BDD6E76F42AD65A169A504 /* Pods-RNSwiftDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A463BAE7545BC1D2D3D69385B4087FCE /* Pods-RNSwiftDemo */ = {
+		97CDCBE76E88BAA83CDA0DEDE03AA961 /* Pods-RNSwiftDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0E980DB6A3B4E9C9CE53562416EEB29 /* Build configuration list for PBXNativeTarget "Pods-RNSwiftDemo" */;
+			buildConfigurationList = EFCCE1ECB81BAE8FAC69DF8C1FD41DCE /* Build configuration list for PBXNativeTarget "Pods-RNSwiftDemo" */;
 			buildPhases = (
-				F5BAF9AFE0145B9E150D74244ED19AE5 /* Sources */,
-				D21C9E6B60E1896DCCBE9C0CE84AEE0B /* Frameworks */,
-				16B662275D306E2A1D2A1D0F6C181F03 /* Headers */,
+				24509C79F4525A2B2B696F35F5B0B8DC /* Sources */,
+				C4B771A2D7B795353A194579EEAD69F6 /* Frameworks */,
+				A9AC28E491F1F6ED51289B7CF94F9FA1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF1DFFEF470C41B38CDEAE9CF0179E18 /* PBXTargetDependency */,
+			);
+			name = "Pods-RNSwiftDemo";
+			productName = "Pods-RNSwiftDemo";
+			productReference = 0B1E995BD91B99585A51CF8176CBA71D /* Pods_RNSwiftDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ED279AFE7EA745A57B7B9F35AD5F2C9F /* FSPagerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBA75C9B7A7FB46E2A2B66557F47267D /* Build configuration list for PBXNativeTarget "FSPagerView" */;
+			buildPhases = (
+				A93EF77B2EC7EA05A5A8DA18484E330A /* Sources */,
+				6E070AB187E415CF4D7EB6E528000CB4 /* Frameworks */,
+				369BAADAD4DE4AF1B7B2B9396F25F59C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-RNSwiftDemo";
-			productName = "Pods-RNSwiftDemo";
-			productReference = 154C894AD78BB89645FCD4128499D1B4 /* Pods_RNSwiftDemo.framework */;
+			name = FSPagerView;
+			productName = FSPagerView;
+			productReference = 99CAC195EB52DDD2EE0607884138A9C4 /* FSPagerView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -148,30 +260,55 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 34A1F324692E9240B30743FBE65BB31B /* Products */;
+			productRefGroup = D9FE8A32EEDB8725B84AD85971C9232C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A463BAE7545BC1D2D3D69385B4087FCE /* Pods-RNSwiftDemo */,
+				ED279AFE7EA745A57B7B9F35AD5F2C9F /* FSPagerView */,
+				97CDCBE76E88BAA83CDA0DEDE03AA961 /* Pods-RNSwiftDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F5BAF9AFE0145B9E150D74244ED19AE5 /* Sources */ = {
+		24509C79F4525A2B2B696F35F5B0B8DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B604B2854F1242C2EFB153DE23A9B552 /* Pods-RNSwiftDemo-dummy.m in Sources */,
+				96CA37578CC8CC62EFB38F1635EAC76D /* Pods-RNSwiftDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A93EF77B2EC7EA05A5A8DA18484E330A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				838BD1D2FCD856E3E7AAD63C498E9A92 /* FSPageControl.swift in Sources */,
+				6F16E3CF88BBD2BAE86F1B09EA55311A /* FSPagerCollectionView.swift in Sources */,
+				075CC243674F7187A841C287CA081280 /* FSPagerView-dummy.m in Sources */,
+				03BBD899B92EFE0E171DEF7B4A7DDE8B /* FSPagerView.swift in Sources */,
+				79E391C6A3429405FB63474CF7218DE3 /* FSPagerViewCell.swift in Sources */,
+				5832B6C6DF42450FCAB70E67F464E040 /* FSPagerViewLayoutAttributes.swift in Sources */,
+				FED3B2A51B9910D524980ACD078DE5AC /* FSPageViewLayout.swift in Sources */,
+				638D4086C988445EEC88BF66F3B5D3B9 /* FSPageViewTransformer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CF1DFFEF470C41B38CDEAE9CF0179E18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FSPagerView;
+			target = ED279AFE7EA745A57B7B9F35AD5F2C9F /* FSPagerView */;
+			targetProxy = 624673316A090B7FB0F1CA30EEA88FF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		000EF498553878A5A3690CBB32D383DD /* Release */ = {
+		74726B09F55E41303A1B844FA76BA6B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B79230E8EBFD11206CC680BB5FFB8FD /* Pods-RNSwiftDemo.release.xcconfig */;
+			baseConfigurationReference = D3F327A9387EBEE32EE817C0B231357B /* FSPagerView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -182,19 +319,48 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-RNSwiftDemo/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FSPagerView/FSPagerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSPagerView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RNSwiftDemo/Pods-RNSwiftDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_RNSwiftDemo;
+				MODULEMAP_FILE = "Target Support Files/FSPagerView/FSPagerView.modulemap";
+				PRODUCT_NAME = FSPagerView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		959540DB9959412A815DEB4CAF3FF7F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3F327A9387EBEE32EE817C0B231357B /* FSPagerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FSPagerView/FSPagerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSPagerView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FSPagerView/FSPagerView.modulemap";
+				PRODUCT_NAME = FSPagerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -203,7 +369,7 @@
 			};
 			name = Release;
 		};
-		9D13C6753FEC7B4C3140C9E4FFE69EAC /* Debug */ = {
+		9E138AA326912A7E808E589E98445D9B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2C8504A1CE6609C9D1898507885FC948 /* Pods-RNSwiftDemo.debug.xcconfig */;
 			buildSettings = {
@@ -229,6 +395,8 @@
 				PRODUCT_NAME = Pods_RNSwiftDemo;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -288,6 +456,41 @@
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DC6A3F2BB6011B2A46EFEDE8F99174CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B79230E8EBFD11206CC680BB5FFB8FD /* Pods-RNSwiftDemo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RNSwiftDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RNSwiftDemo/Pods-RNSwiftDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RNSwiftDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -363,11 +566,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D0E980DB6A3B4E9C9CE53562416EEB29 /* Build configuration list for PBXNativeTarget "Pods-RNSwiftDemo" */ = {
+		DBA75C9B7A7FB46E2A2B66557F47267D /* Build configuration list for PBXNativeTarget "FSPagerView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9D13C6753FEC7B4C3140C9E4FFE69EAC /* Debug */,
-				000EF498553878A5A3690CBB32D383DD /* Release */,
+				74726B09F55E41303A1B844FA76BA6B3 /* Debug */,
+				959540DB9959412A815DEB4CAF3FF7F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFCCE1ECB81BAE8FAC69DF8C1FD41DCE /* Build configuration list for PBXNativeTarget "Pods-RNSwiftDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E138AA326912A7E808E589E98445D9B /* Debug */,
+				DC6A3F2BB6011B2A46EFEDE8F99174CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
