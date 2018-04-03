@@ -32,7 +32,6 @@ RCT_EXPORT_VIEW_PROPERTY(onClickBanner, RCTBubblingEventBlock)
 - (UIView *)view{
     LoanPagerView *pagerView = [[LoanPagerView alloc] initWithFrame:CGRectZero];
     [pagerView registerClass:[FSPagerViewCell class] forCellWithReuseIdentifier:@"PagerCell"];
-//    pagerView.itemSize = CGSizeMake(300, 100);
     pagerView.delegate = self;
     pagerView.dataSource = self;
     return pagerView;

@@ -6,6 +6,11 @@ import Dimensions from 'Dimensions';
 var LoanBanner = requireNativeComponent('LoanBanner', null);
 
 export default class MapView extends Component {
+  static navigationOptions = () => {
+    return {
+      title: 'Banner',
+    }
+  };
    render() {
   		return <LoanBanner  itemSize={{width:Dimensions.get('window').width,height:200}} 
   		isInfinite={true} 
@@ -13,6 +18,7 @@ export default class MapView extends Component {
   		onClickBanner={ (e) => {
   				console.log(e.nativeEvent);
   				console.log(e.nativeEvent.index);
+  				this.props.navigation.navigate('MapView')
   			}
   		}
   		style={{marginTop:100, width:Dimensions.get('window').width, height:240}} />;
@@ -22,6 +28,6 @@ export default class MapView extends Component {
 MapView.propTypes = {
   interitemSpacing: PropTypes.number,
   isInfinite:PropTypes.bool,
-  itemSize:PropTypes.anym,
+  itemSize:PropTypes.func,
   onClickBanner:PropTypes.func
 };
