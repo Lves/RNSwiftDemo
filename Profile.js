@@ -15,6 +15,7 @@ import {
 import {
   StackNavigator,
 } from 'react-navigation';
+import CodePush from "react-native-code-push";
 
 
 export default class ProfileScreen extends Component {
@@ -28,10 +29,11 @@ export default class ProfileScreen extends Component {
       },
       headerTintColor: navigationOptions.headerStyle.backgroundColor,
       headerRight: (
-        <Button  title="+1" color="#f0f" onPress={() => alert('This is a button!')} />
+        <UpdateButton />
       ),
     }
   };
+
   render(){
     return (
        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -41,7 +43,7 @@ export default class ProfileScreen extends Component {
           onPress={() => this.props.navigation.navigate('Profile',{otherParam : '哈哈'})}
         />
         <Button
-          title="返回"
+          title="退出RN"
           onPress={ () => 
             NativeModules.RNBridge.routeBackToNative()
           }
@@ -49,5 +51,49 @@ export default class ProfileScreen extends Component {
       </View>
     );
   }
-
 }
+
+
+class UpdateButton extends Component{
+ codePushStatusDidChange(syncStatus) {
+    switch(syncStatus) {
+      case CodePush.SyncStatus.CHECKING_FOR_UPDATE:
+        alert('检查更新');
+        break;
+      case CodePush.SyncStatus.DOWNLOADING_PACKAGE:
+        alert('下载资源包中...');
+        break;
+      case CodePush.SyncStatus.AWAITING_USER_ACTION:
+        alert('等待用户点击');
+        break;
+      case CodePush.SyncStatus.INSTALLING_UPDATE:
+        alert('安装更新');
+        break;
+      case CodePush.SyncStatus.UP_TO_DATE:
+        alert('已经是最新版本');
+        break;
+      case CodePush.SyncStatus.UPDATE_IGNORED:
+        alert('用户已取消');
+        break;
+      case CodePush.SyncStatus.UPDATE_INSTALLED:
+        alert('已安装，等待重启');
+        break;
+      case CodePush.SyncStatus.UNKNOWN_ERROR:
+        alert('An unknown error occurred.');
+        break;
+    }
+  }
+
+  render(){
+    return (
+        <Button title="更新" color="#f0f" onPress={ () => 
+          CodePush.sync(
+            { installMode: CodePush.InstallMode.IMMEDIATE, updateDialog: true },
+            this.codePushStatusDidChange.bind(this),
+          )
+         } />
+    )
+  }
+}
+
+

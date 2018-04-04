@@ -19,9 +19,12 @@ class RNViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = CodePush.bundleURL()
-        
-//        let url = URL(string: "http://localhost:8081/index.bundle?platform=ios")
+        var url:URL
+//        #if DEBUG
+//            url = URL(string: "http://localhost:8081/index.bundle?platform=ios")!
+//        #else
+            url = CodePush.bundleURL()
+//        #endif
         let rootView = RCTRootView(
             bundleURL: url,
             moduleName: "RNSwiftDemo",

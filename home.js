@@ -43,16 +43,13 @@ export default class Home extends Component<Props> {
           title="原生控件"
           onPress={() => this.props.navigation.navigate('MapView')}
         />
-         <Button
-          title="添加一行，你能出来吗"
-          onPress={() => this.props.navigation.navigate('MapView')}
-        />
         <Button
           title="跳转原生VC"
           onPress={() => 
             NativeModules.RNBridge.routeToNative('DetailViewController','Main')
           }
         />
+        <Text>版本100006</Text>
 
       </View>
       

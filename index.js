@@ -148,6 +148,14 @@ codePushStatusDidChange(syncStatus) {
       this.codePushDownloadDidProgress.bind(this)
     );
   }
+  //应用启动时检查更新
+  componentDidMount(){
+    CodePush.sync(
+      {},
+      this.codePushStatusDidChange.bind(this),
+      this.codePushDownloadDidProgress.bind(this)
+    );
+  }
   render() {
     let progressView;
 
@@ -156,66 +164,34 @@ codePushStatusDidChange(syncStatus) {
         <Text style={styles.messages}>{this.state.progress.receivedBytes} of {this.state.progress.totalBytes} bytes received</Text>
       );
     }
-    // StackNavigator **only** accepts a screenProps prop so we're passing
-    // initialProps through that.
-    // if (this.props.name == 'listView'){
-    //   return <ListStack screenProps={this.props} />; 
-    // } else {
-    //   return <RootStack screenProps={this.props} />; 
-    // }
-    return (
-  <View style={styles.container}>
-    <TouchableOpacity onPress={this.sync.bind(this)}>
-          <Text style={styles.syncButton}>Press for background sync</Text>
-    </TouchableOpacity>
-    <TouchableOpacity onPress={this.syncImmediate.bind(this)}>
-          <Text style={styles.syncButton}>Press for dialog-driven sync</Text>
-    </TouchableOpacity>
+    if (this.props.name == 'listView'){
+      return <ListStack screenProps={this.props} />; 
+    } else {
+      return <RootStack screenProps={this.props} />; 
+    }
+     //    return (
+     //  <View style={styles.container}>
+     //    <TouchableOpacity onPress={this.sync.bind(this)}>
+     //          <Text style={styles.syncButton}>点击后天更新</Text>
+     //    </TouchableOpacity>
+     //    <TouchableOpacity onPress={this.syncImmediate.bind(this)}>
+     //          <Text style={styles.syncButton}>弹框提醒更新</Text>
+     //    </TouchableOpacity>
 
-    <TouchableOpacity onPress={this.toggleAllowRestart.bind(this)}>
-          <Text style={styles.restartToggleButton}>重启 { this.state.restartAllowed ? "允许" : "禁止"}</Text>
-    </TouchableOpacity>
+     //    <TouchableOpacity onPress={this.toggleAllowRestart.bind(this)}>
+     //          <Text style={styles.restartToggleButton}>重启 { this.state.restartAllowed ? "允许" : "禁止"}</Text>
+     //    </TouchableOpacity>
 
-    <TouchableOpacity onPress={this.getUpdateMetadata.bind(this)}>
-          <Text style={styles.syncButton}>点击更新元数据</Text>
-     </TouchableOpacity>
-    <Text style={styles.messages}>{this.state.syncMessage || ""}</Text>
+     //    <TouchableOpacity onPress={this.getUpdateMetadata.bind(this)}>
+     //          <Text style={styles.syncButton}>点击更新元数据</Text>
+     //     </TouchableOpacity>
+     //    <Text style={styles.messages}>{this.state.syncMessage || ""}</Text>
 
-    <Text style={styles.messages}>sdfg是地方官史蒂夫</Text>
-  </View>
- );
+     //    <Text style={styles.messages}>sdfg是地方官史蒂夫dffdd</Text>
+     //  </View>
+     // );
   }
 }
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    backgroundColor: "#F5FCFF",
-    paddingTop: 50
-  },
-  image: {
-    margin: 30,
-    width: Dimensions.get("window").width - 100,
-    height: 365 * (Dimensions.get("window").width - 100) / 651,
-  },
-  messages: {
-    marginTop: 30,
-    textAlign: "center",
-  },
-  restartToggleButton: {
-    color: "blue",
-    fontSize: 17
-  },
-  syncButton: {
-    color: "green",
-    fontSize: 17
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: "center",
-    margin: 20
-  },
-});
 
 let codePushOptions = { checkFrequency: CodePush.CheckFrequency.MANUAL };
 MyApp = CodePush(codePushOptions)(MyApp);
