@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {
   Platform,
-  StyleSheet,
   Text,
   Image,
   View,
@@ -42,6 +41,10 @@ export default class Home extends Component<Props> {
         />
         <Button
           title="原生控件"
+          onPress={() => this.props.navigation.navigate('MapView')}
+        />
+         <Button
+          title="添加一行，你能出来吗"
           onPress={() => this.props.navigation.navigate('MapView')}
         />
         <Button

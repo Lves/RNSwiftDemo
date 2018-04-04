@@ -5,3 +5,4 @@
 #import <React/RCTRootView.h>
 #import <React/RCTBundleURLProvider.h>
 #import "UIView+React.h"
+#import <CodePush/CodePush.h>
