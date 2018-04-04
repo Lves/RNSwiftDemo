@@ -49,7 +49,7 @@ export default class Home extends Component<Props> {
             NativeModules.RNBridge.routeToNative('DetailViewController','Main')
           }
         />
-        <Text>版本100006</Text>
+        <Text>版本100007</Text>
 
       </View>
       
