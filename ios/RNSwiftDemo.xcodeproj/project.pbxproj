@@ -356,6 +356,7 @@
 		6CC9586F2061F95900D5EC7A /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
 		6CC958782061FB4400D5EC7A /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		6CD3AA452061200A000BE8DB /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		82A4379F764D29BFC822C666 /* Pods-RNSwiftDemo.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNSwiftDemo.staging.xcconfig"; path = "Pods/Target Support Files/Pods-RNSwiftDemo/Pods-RNSwiftDemo.staging.xcconfig"; sourceTree = "<group>"; };
 		970B1C95CEB8CA82BDF5C94C /* Pods-RNSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNSwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNSwiftDemo/Pods-RNSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D5C8272BED9B8680BC7765AC /* Pods-RNSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNSwiftDemo/Pods-RNSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -409,6 +410,7 @@
 			children = (
 				D5C8272BED9B8680BC7765AC /* Pods-RNSwiftDemo.debug.xcconfig */,
 				970B1C95CEB8CA82BDF5C94C /* Pods-RNSwiftDemo.release.xcconfig */,
+				82A4379F764D29BFC822C666 /* Pods-RNSwiftDemo.staging.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1051,10 +1053,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RNSwiftDemo/Pods-RNSwiftDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1259,7 +1263,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODEPUSH_KEY = MyAvbMW9MP9WNxEEXDjnhVVR5Vg44ksvOXqog;
+				CODEPUSH_KEY = 4sWQu7B5tBjb9QJbwXTzTKVl8vby4ksvOXqog;
 				CODE_SIGN_STYLE = Manual;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 4WQAYARMUF;
@@ -1333,11 +1337,11 @@
 		};
 		6CA680E12074D0AB002B7659 /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 970B1C95CEB8CA82BDF5C94C /* Pods-RNSwiftDemo.release.xcconfig */;
+			baseConfigurationReference = 82A4379F764D29BFC822C666 /* Pods-RNSwiftDemo.staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODEPUSH_KEY = iAar0PQrhSjaTIcyWfDrjtimBcMJ4ksvOXqog;
+				CODEPUSH_KEY = eAu5H9vvHkaVFjH6LENfrWIvsjXZ4ksvOXqog;
 				CODE_SIGN_STYLE = Manual;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)";
 				DEAD_CODE_STRIPPING = NO;

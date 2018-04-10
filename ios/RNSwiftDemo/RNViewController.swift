@@ -21,7 +21,7 @@ class RNViewController: UIViewController {
         super.viewDidLoad()
         var url:URL
 //        #if DEBUG
-//            url = URL(string: "http://localhost:8081/index.bundle?platform=ios")!
+//            url = URL(string: "http://192.168.208.159:8081/index.bundle?platform=ios")!
 //        #else
             url = CodePush.bundleURL()
 //        #endif
