@@ -13,7 +13,9 @@ import Home from './home';
 import ProfileScreen from './Profile';
 import LoginScreen from './src/views/login';
 import MapView from './src/views/MapView';
+import FlatListScreen from './src/views/FlatListScreen';
 import CodePush from "react-native-code-push";
+
 
 import {
   StackNavigator,
@@ -31,6 +33,9 @@ const RootStack = StackNavigator(
     },
     MapView:{
       screen:MapView
+    },
+    FlatListScreen:{
+      screen:FlatListScreen,
     }
   },
   {
@@ -61,6 +66,9 @@ const ListStack = StackNavigator(
     },
     MapView:{
       screen:MapView
+    },
+    FlatListScreen:{
+      screen:FlatListScreen,
     }
   },
   {
@@ -89,26 +97,38 @@ codePushStatusDidChange(syncStatus) {
     switch(syncStatus) {
       case CodePush.SyncStatus.CHECKING_FOR_UPDATE:
         this.setState({ syncMessage: "检查更新" });
+        console.log("已经是最新版本");
         break;
       case CodePush.SyncStatus.DOWNLOADING_PACKAGE:
         this.setState({ syncMessage: "下载资源包中..." });
+        console.log("下载资源包中...");
         break;
       case CodePush.SyncStatus.AWAITING_USER_ACTION:
         this.setState({ syncMessage: "等待用户点击" });
+        console.log("等待用户点击");
         break;
       case CodePush.SyncStatus.INSTALLING_UPDATE:
         this.setState({ syncMessage: "安装更新" });
+        console.log("安装更新");
         break;
       case CodePush.SyncStatus.UP_TO_DATE:
+        
         this.setState({ syncMessage: "已经是最新版本", progress: false });
+        console.log("已经是最新版本");
         break;
       case CodePush.SyncStatus.UPDATE_IGNORED:
         this.setState({ syncMessage: "用户已取消", progress: false });
+        console.log("用户已取消");
         break;
       case CodePush.SyncStatus.UPDATE_INSTALLED:
         this.setState({ syncMessage: "更新已安装，等待重启", progress: false });
+        console.log("更新已安装，等待重启");
+        // CodePush.restartApp(true)
+        // console.log("重启了")
+        
         break;
       case CodePush.SyncStatus.UNKNOWN_ERROR:
+       console.log("An unknown error occurred.");
         this.setState({ syncMessage: "An unknown error occurred.", progress: false });
         break;
     }
@@ -149,13 +169,13 @@ codePushStatusDidChange(syncStatus) {
     );
   }
   //应用启动时检查更新
-  componentDidMount(){
-    CodePush.sync(
-      {},
-      this.codePushStatusDidChange.bind(this),
-      this.codePushDownloadDidProgress.bind(this)
-    );
-  }
+  // componentDidMount(){
+  //   CodePush.sync(
+  //     {},
+  //     this.codePushStatusDidChange.bind(this),
+  //     this.codePushDownloadDidProgress.bind(this)
+  //   );
+  // }
   render() {
     let progressView;
 
@@ -169,29 +189,61 @@ codePushStatusDidChange(syncStatus) {
     } else {
       return <RootStack screenProps={this.props} />; 
     }
-     //    return (
-     //  <View style={styles.container}>
-     //    <TouchableOpacity onPress={this.sync.bind(this)}>
-     //          <Text style={styles.syncButton}>点击后天更新</Text>
-     //    </TouchableOpacity>
-     //    <TouchableOpacity onPress={this.syncImmediate.bind(this)}>
-     //          <Text style={styles.syncButton}>弹框提醒更新</Text>
-     //    </TouchableOpacity>
+      //   return (
+      // <View style={styles.container}>
+      //   <TouchableOpacity onPress={this.sync.bind(this)}>
+      //         <Text style={styles.syncButton}>点击后台更新</Text>
+      //   </TouchableOpacity>
+      //   <TouchableOpacity onPress={this.syncImmediate.bind(this)}>
+      //         <Text style={styles.syncButton}>弹框提醒更新</Text>
+      //   </TouchableOpacity>
 
-     //    <TouchableOpacity onPress={this.toggleAllowRestart.bind(this)}>
-     //          <Text style={styles.restartToggleButton}>重启 { this.state.restartAllowed ? "允许" : "禁止"}</Text>
-     //    </TouchableOpacity>
+      //   <TouchableOpacity onPress={this.toggleAllowRestart.bind(this)}>
+      //         <Text style={styles.restartToggleButton}>重启 { this.state.restartAllowed ? "允许" : "禁止"}</Text>
+      //   </TouchableOpacity>
 
-     //    <TouchableOpacity onPress={this.getUpdateMetadata.bind(this)}>
-     //          <Text style={styles.syncButton}>点击更新元数据</Text>
-     //     </TouchableOpacity>
-     //    <Text style={styles.messages}>{this.state.syncMessage || ""}</Text>
+      //   <TouchableOpacity onPress={this.getUpdateMetadata.bind(this)}>
+      //         <Text style={styles.syncButton}>点击更新元数据</Text>
+      //    </TouchableOpacity>
+      //   <Text style={styles.messages}>{this.state.syncMessage || ""}</Text>
 
-     //    <Text style={styles.messages}>sdfg是地方官史蒂夫dffdd</Text>
-     //  </View>
-     // );
+      //   <Text style={styles.messages}>D70002</Text>
+      // </View>
+    //  );
   }
 }
+
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    backgroundColor: "#F5FCFF",
+    paddingTop: 50
+  },
+  image: {
+    margin: 30,
+    width: Dimensions.get("window").width - 100,
+    height: 365 * (Dimensions.get("window").width - 100) / 651,
+  },
+  messages: {
+    marginTop: 30,
+    textAlign: "center",
+  },
+  restartToggleButton: {
+    color: "blue",
+    fontSize: 17
+  },
+  syncButton: {
+    color: "green",
+    fontSize: 17
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: "center",
+    margin: 20
+  },
+});
 
 let codePushOptions = { checkFrequency: CodePush.CheckFrequency.MANUAL };
 MyApp = CodePush(codePushOptions)(MyApp);

@@ -1,15 +1,18 @@
 PODS:
+  - Alamofire (4.7.0)
   - FSPagerView (0.7.1)
   - IQKeyboardManagerSwift (5.0.8)
 
 DEPENDENCIES:
+  - Alamofire
   - FSPagerView
   - IQKeyboardManagerSwift
 
 SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   FSPagerView: 958aba39684e1573755ddcfcc29f7eebb8413cee
   IQKeyboardManagerSwift: 2e7dc7f98c111458c1ea2b373f893e8cf95e2b97
 
-PODFILE CHECKSUM: 21a8009c76ab534e928e198e869128e5192f2ccb
+PODFILE CHECKSUM: 6e71a3b35a5ec55e41c28ce717682a28e17bf32f
 
 COCOAPODS: 1.3.1

@@ -21,7 +21,7 @@
 	<key>CodePushDeploymentKey</key>
 	<string>$(CODEPUSH_KEY)</string>
 	<key>CodePushServerURL</key>
-	<string>http://192.168.206.67:3000</string>
+	<string>http://miracle-web-app.qa-01.idumiao.com</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>

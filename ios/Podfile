@@ -6,6 +6,7 @@ use_frameworks!
 def pods
     pod 'FSPagerView'
     pod 'IQKeyboardManagerSwift'
+    pod 'Alamofire'
   # 'node_modules'目录一般位于根目录中
   # 如果你的RN版本 >= 0.42.0，请加入下面这行
 #  pod 'React', :path => '../node_modules/react-native', :subspecs => [
